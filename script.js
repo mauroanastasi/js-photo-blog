@@ -5,18 +5,24 @@ const newGroup = []
 // creo la mia funzione per destrutturare e creare una singola card
 const generateCard = (element) => {
     // creo una stringa dove inserire la mia card
-    const card = `<div class="col-12 col-md-6 col-lg-4 mt-5 colonna" style="border:1px solid #0a0313;">
+    const card = `<div class="col-12 col-md-6 col-lg-4 mb-5 colonna">
                         <div class="picSquare">
-                        <figure>
-                        <img src="${element.url}" talt="">
-                        <img src="./img/pin.svg" class="point" alt="puntina">
-                        </figure>
+                            <figure>
+                                <img src="${element.url}" talt="">
+                                <img src="./img/pin.svg" class="point" alt="puntina">
+                            </figure>
                             <figcaption>
-                            ${element.date}
-                            ${element.title}
+                                <div class="dataCard">
+                                    ${element.date}                            
+                                </div>
+                                <div class="titoloCard">
+                                    <strong>
+                                        ${element.title}                            
+                                    </strong>
+                                </div>
                             </figcaption>
-                        </div>
-                    </div>`
+                            </div>
+                        </div>`
                         
             return card;
     }
