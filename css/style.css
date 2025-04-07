@@ -1,10 +1,19 @@
+/* //////////////////////////////////////HEADER////////////////////////////////////// */
+
 .sfondoHeader{
     background-image: url(../img/wall.png);
     height: 200px;
 }
 
-.sfondoContainer{
+/* //////////////////////////////////////MAIN////////////////////////////////////// */
+
+main{
     background-image: url(../img/cork.png);
     height: 700px
     
+}
+
+.colonna{
+    background-color: aqua;
+    height: 400px;
 }
