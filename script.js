@@ -48,3 +48,4 @@ const render = (array) => {
       });
   })
   console.log(newGroup);
+  
