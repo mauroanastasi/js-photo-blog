@@ -8,7 +8,7 @@ const generateCard = (element) => {
     const card = `<div class="col-12 col-md-6 col-lg-4 mb-5 colonna">
                         <div class="picSquare">
                             <figure>
-                                <img src="${element.url}" talt="">
+                                <img src="${element.url}" talt="" onclick="on()">
                                 <img src="./img/pin.svg" class="point" alt="puntina">
                             </figure>
                             <figcaption>
@@ -48,4 +48,13 @@ const render = (array) => {
       });
   })
   console.log(newGroup);
+
+//   overlay
+
+  function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
   
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
