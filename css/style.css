@@ -81,5 +81,11 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
   }
+
+#offB{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
