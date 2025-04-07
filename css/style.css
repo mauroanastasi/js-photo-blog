@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 /* //////////////////////////////////////HEADER////////////////////////////////////// */
 
 .sfondoHeader{
@@ -16,11 +20,29 @@ h1{
 
 body{
     background-image: url(../img/cork.png);
+}
 
-    
+/* colonne */
+/* /////// */
+
+.row {
+    gap: 20px;
 }
 
 .colonna{
-    background-color: aqua;
-    height: 400px;
+    background-color: #fff;
+    width: calc(33.33% - 20px);
+}
+
+/* card */
+/* //// */
+
+.picSquare{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.picSquare img{
+    max-width: 100%;
 }
