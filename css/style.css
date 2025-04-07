@@ -1,0 +1,10 @@
+.sfondoHeader{
+    background-image: url(../img/wall.png);
+    height: 200px;
+}
+
+.sfondoContainer{
+    background-image: url(../img/cork.png);
+    height: 700px
+    
+}
