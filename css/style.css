@@ -31,7 +31,7 @@ body{
 
 .colonna{
     background-color: #fff;
-    width: calc(33.33% - 20px);
+    width: calc(100%/3 - 20px);
 }
 
 /* card */
@@ -40,12 +40,19 @@ body{
 .picSquare{
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding-top: 15px;
     font-family: "Sometype Mono", monospace;
-    font-size: 20px
-;
+    font-size: 20px;
+    position: relative;
 }
 
 .picSquare img{
     max-width: 100%;
+}
+
+.point{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
