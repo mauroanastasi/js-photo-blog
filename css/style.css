@@ -3,12 +3,12 @@
 }
 
 /* //////////////////////////////////////--HEADER--////////////////////////////////////// */
-
+/* sfondo header */
 .sfondoHeader{
     background-image: url(../img/wall.png);
 
 }
-
+/* titolo */
 h1{
     text-align: center;
     font-size: 100px;
@@ -18,42 +18,47 @@ h1{
     font-family: "Edu TAS Beginner", sans-serif;
 }
 /* //////////////////////////////////////--MAIN--////////////////////////////////////// */
-
+/* sfondo main */
 body{
     background-image: url(../img/cork.png);
 }
 
-/* card */
-/* /////// */
+/*////// __card__ ///////*/
+/* //////////////// */
 
-.picSquare{
-    background-color: #fff;
+/* card con il contenuto */
+.cardInfo{
     display: flex;
     flex-direction: column;
     padding-top: 15px;
     font-family: "Sometype Mono", monospace;
     font-size: 15px;
     position: relative;
+    background-color: #fff;
     
 }
-
-.picSquare img{
+/* per le immagini */
+.cardInfo img{
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+
 }
 
+/* puntina */
 .point{
     position: absolute;
     top: -10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%);
 }
 
+/* descrizione immagini */
 .titoloCard{
     font-size: 30px;
     font-family: "Edu TAS Beginner", sans-serif;    
     padding-left: 15px;
+
 }
 
 .dataCard{
@@ -61,7 +66,7 @@ body{
 }
 
 /* /////////////////////////////////////--OVERLAY--//////////////////////////////////// */
-
+/* sfondo overlay nero */
 #overlay {
     position: fixed;
     display: none;
@@ -71,21 +76,29 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 2; 
-    cursor: pointer;
-  }
 
+  }
+/* immagine overlay */
 #OverlayImg{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
   }
 
+  /* pulsante overlay di chiusura */
 #offB{
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
+/* non funziona, do width direttamente alla stringa 
+.overlay-image {
+    width: 300px;
+    height: auto;
+} */
