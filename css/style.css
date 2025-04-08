@@ -35,13 +35,23 @@ body{
     font-size: 15px;
     position: relative;
     background-color: #fff;
-    
+    box-shadow: 2px 2px 2px 2px hwb(0 0% 100% / 0.242);
 }
+
+/* bonus animazioni */
+@keyframes mymove {
+    100% { transform: rotate(10deg) scale(1.1); }
+  }
+.cardInfo:hover {
+    animation: mymove 1s ease-in-out forwards;
+  }
+
 /* per le immagini */
 .cardInfo img{
     max-width: 100%;
     padding-left: 15px;
     padding-right: 15px;
+    cursor: pointer;
 
 }
 
@@ -79,7 +89,7 @@ body{
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 2; 
 
-  }
+}
 /* immagine overlay */
 #OverlayImg{
     position: absolute;

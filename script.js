@@ -47,7 +47,7 @@ const render = (array) => {
   }
 
 
-  ///////////////////////////////////   overlay   ///////////////////////////////////
+///////////////////////////////////   overlay   ///////////////////////////////////
   
 //   recuperò l'elemento dove inseririre le immagine
   const OverlayImg = document.getElementById(`OverlayImg`);
@@ -64,3 +64,4 @@ const render = (array) => {
 // Aggiungi l'immagine all'overla
           OverlayImg.innerHTML = `<img src="${imgSelected.url}" alt=""width="400" height="auto">>`;
       }
+/////////////////////////////////// BONUS //////////////////////////////////////
