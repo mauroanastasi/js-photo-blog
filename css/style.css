@@ -16,6 +16,7 @@ h1{
     padding-bottom: 30px;
     margin-bottom: 50px;
     font-family: "Edu TAS Beginner", sans-serif;
+    color: hsl(180, 53%, 28%);
 }
 /* //////////////////////////////////////--MAIN--////////////////////////////////////// */
 /* sfondo main */
@@ -35,15 +36,18 @@ body{
     font-size: 15px;
     position: relative;
     background-color: #fff;
-    box-shadow: 2px 2px 2px 2px hwb(0 0% 100% / 0.242);
+    /* box-shadow: 2px 2px 2px 2px hwb(0 0% 100% / 0.242); */
+    box-shadow: 20px 20px 50px 10px pink inset;
+
 }
 
-/* bonus animazioni */
+/* bonus animazioni
 @keyframes mymove {
     100% { transform: rotate(10deg) scale(1.1); }
-  }
+  } */
+
 .cardInfo:hover {
-    animation: mymove 1s ease-in-out forwards;
+    animation: mymove 2s infinite ;
   }
 
 /* per le immagini */
@@ -112,3 +116,17 @@ body{
     width: 300px;
     height: auto;
 } */
+
+
+/* EXTRA MY VISON */
+
+@keyframes mymove {
+    0%, 100% { 
+      box-shadow: 20px 20px 50px 10px pink inset, 
+                  10px 20px 30px blue; 
+    }
+    50% { 
+      box-shadow: 20px 20px 50px 10px pink inset, 
+                  20px 30px 40px blue; /* Ombra blu più intensa */
+    }
+  }

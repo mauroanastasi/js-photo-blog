@@ -64,4 +64,3 @@ const render = (array) => {
 // Aggiungi l'immagine all'overla
           OverlayImg.innerHTML = `<img src="${imgSelected.url}" alt=""width="400" height="auto">>`;
       }
-/////////////////////////////////// BONUS //////////////////////////////////////
